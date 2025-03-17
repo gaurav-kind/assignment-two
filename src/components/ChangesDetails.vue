@@ -7,7 +7,7 @@ const props = defineProps(['selectDate'])
 const getselectedDateData = async () => {
     if (!props.selectDate) return
     try {
-        const response = await fetch(`https://heatmapchanges.free.beeceptor.com/changes/${props.selectDate}`);
+        const response = await fetch(`https://demoone.free.beeceptor.com/changes/${props.selectDate}`);
         allChangesData.value = await response.json();
         console.log(allChangesData.value);
     } catch (error) {
